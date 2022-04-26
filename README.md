@@ -10,7 +10,7 @@ A project by Alexis Hassiel Nuviedo Arriaga ([@nuviedo](https://github.com/nuvie
 
 The problem resides in programming a crawler to obtain the latest image of the Sun according to NASA's SDO.
 
-![](img/latest_1024_HMIIC.jpg)
+![](latest_1024_HMIIC.jpg)
 
 The problem was solved by making use of the built-in time & subprocess libraries to use wget every X minutes, whereas X is defined in the attached update_time.conf file as an integer numeral, without spacing. Namely, the algorithm will, until stopped, read from said file to know it's next wait time, proceed to sleep it blindly, and then download the image with wget in silent mode.
 
